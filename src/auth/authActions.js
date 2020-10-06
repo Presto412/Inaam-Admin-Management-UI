@@ -5,7 +5,7 @@ import {
 } from "axios-jwt";
 import axios from "axios";
 import { LOGIN_URL, REFRESH_TOKEN_URL } from "../Config/app.config";
-import apiClient from "./apiClient";
+import apiClient from "../api/apiClient";
 
 // login
 export const login = async (params) => {

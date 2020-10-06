@@ -39,6 +39,8 @@ class UserList extends Component {
   }
 
   async componentDidMount(){
+    const { match: { params } } = this.props;
+    console.log(params);
     //await this.props.fetchAllRealmUsers(this.props.realmId);
     //console.log(this.props.realms);
   }
@@ -89,4 +91,3 @@ export default connect(
     deleteUser
   },
 )(UserList);
-//export default CrudComponent;

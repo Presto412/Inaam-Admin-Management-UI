@@ -1,16 +1,11 @@
 import { Button, Input, Divider } from 'antd';
 import React, { Component } from "react";
 
-class RealmEdit extends Component {
+class UserEdit extends Component {
 
     constructor(props){
       super(props);
     
-    }
-
-    componentDidMount(){
-        const { match: { params } } = this.props;
-        console.log(params);
     }
 
     render(){
@@ -29,4 +24,4 @@ class RealmEdit extends Component {
   
 }
 
-export default RealmEdit;
+export default UserEdit;

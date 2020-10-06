@@ -14,6 +14,12 @@ import RealmList from "../Components/realms/RealmList";
 import RealmEdit from "../Components/realms/RealmEdit";
 import RealmCreate from "../Components/realms/RealmCreate";
 import UserList from '../Components/users/UserList';
+import UserEdit from "../Components/users/UserEdit";
+import UserCreate from "../Components/users/UserCreate";
+import RealmHome from "../Components/realms/RealmHome";
+import GroupList from "../Components/groups/GroupList";
+import GroupCreate from "../Components/groups/GroupCreate";
+import GroupEdit from "../Components/groups/GroupEdit";
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -65,10 +71,17 @@ class MainLayout extends Component {
               <BrowserRouter>
                 <Switch>
                   <Route exact path="/realm" component={RealmList} />
+                  <Route exact path="/realm/:realmId/home" component={RealmHome} />
                   <Route exact path="/realm/create" component={RealmCreate} />
                   <Route exact path="/realm/:realmId/edit" component={RealmEdit} />
 
                   <Route exact path="/realm/:realmId/users" component={UserList} />
+                  <Route exact path="/realm/:realmId/user/create" component={UserCreate} />
+                  <Route exact path="/realm/:realmId/user/:userId/edit" component={UserEdit} />
+
+                  <Route exact path="/realm/:realmId/groups" component={GroupList} />
+                  <Route exact path="/realm/:realmId/group/create" component={GroupCreate} />
+                  <Route exact path="/realm/:realmId/group/:groupId/edit" component={GroupEdit} />
                 </Switch>
               </BrowserRouter>
             </Content>

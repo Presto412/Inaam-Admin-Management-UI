@@ -1,16 +1,11 @@
 import { Button, Input, Divider } from 'antd';
 import React, { Component } from "react";
 
-class RealmEdit extends Component {
+class GroupEdit extends Component {
 
     constructor(props){
       super(props);
     
-    }
-
-    componentDidMount(){
-        const { match: { params } } = this.props;
-        console.log(params);
     }
 
     render(){
@@ -18,9 +13,7 @@ class RealmEdit extends Component {
             <div>
                 <Input placeholder="Id" />
                 <Divider />
-                <Input placeholder="Realm Name" />
-                <Divider />
-                <Input placeholder="Currency Symbol" />
+                <Input placeholder="Group Name" />
                 <Divider />
                 <Button type="primary">Save</Button>
             </div>
@@ -29,4 +22,4 @@ class RealmEdit extends Component {
   
 }
 
-export default RealmEdit;
+export default GroupEdit;
