@@ -12,13 +12,13 @@ import { Switch } from "antd";
 import LoginPage from "./Containers/Login/LoginPage";
 
 function App() {
-    return (
-        <div className="App">
-            <Provider store={store}>
-                <LoginPage></LoginPage>
-            </Provider>
-        </div>
-    );
+  return (
+    <div className="App">
+      <Provider store={store}>
+        <LoginPage></LoginPage>
+      </Provider>
+    </div>
+  );
 }
 
 export default App;

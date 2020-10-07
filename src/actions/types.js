@@ -15,13 +15,13 @@ export const LOGIN_FAIL = "LOGIN_FAIL";
 export const LOGOUT = "LOGOUT";
 
 export function getPending(str) {
-    return str + "_PENDING";
+  return str + "_PENDING";
 }
 
 export function getFulfilled(str) {
-    return str + "_FULFILLED";
+  return str + "_FULFILLED";
 }
 
 export function getRejected(str) {
-    return str + "_REJECTED";
+  return str + "_REJECTED";
 }

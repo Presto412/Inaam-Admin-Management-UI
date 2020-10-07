@@ -3,20 +3,20 @@ import Title from "../../commons/Title/title";
 import LoginForm from "./LoginForm";
 
 function LoginPage() {
-    const handleSubmit = (formData) => {
-        console.log(formData.username);
-    };
+  const handleSubmit = (formData) => {
+    console.log(formData.username);
+  };
 
-    return (
-        <main className="login-page">
-            <section className="login-section">
-                <div className="login-section__container">
-                    <Title>Login</Title>
-                    <LoginForm onSubmit={handleSubmit} />
-                </div>
-            </section>
-        </main>
-    );
+  return (
+    <main className="login-page">
+      <section className="login-section">
+        <div className="login-section__container">
+          <Title>Login</Title>
+          <LoginForm onSubmit={handleSubmit} />
+        </div>
+      </section>
+    </main>
+  );
 }
 
 export default LoginPage;

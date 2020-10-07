@@ -2,6 +2,6 @@
 import axios from "axios";
 import { SERVER_BASE_URL } from "../config/app.config";
 const apiClient = axios.create({
-    baseURL: SERVER_BASE_URL,
+  baseURL: SERVER_BASE_URL,
 });
 export default apiClient;
