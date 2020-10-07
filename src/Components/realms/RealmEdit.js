@@ -1,20 +1,20 @@
-import { Button, Input, Divider } from 'antd';
+import { Button, Input, Divider } from "antd";
 import React, { Component } from "react";
 
 class RealmEdit extends Component {
-
-    constructor(props){
-      super(props);
-    
+    constructor(props) {
+        super(props);
     }
 
-    componentDidMount(){
-        const { match: { params } } = this.props;
+    componentDidMount() {
+        const {
+            match: { params },
+        } = this.props;
         console.log(params);
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <Input placeholder="Id" />
                 <Divider />
@@ -24,9 +24,8 @@ class RealmEdit extends Component {
                 <Divider />
                 <Button type="primary">Save</Button>
             </div>
-        )
+        );
     }
-  
 }
 
 export default RealmEdit;

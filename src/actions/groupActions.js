@@ -1,23 +1,23 @@
 import apiClient from "../api/apiClient";
-import {FETCH_ALL_REALM_GROUPS, CREATE_GROUP, DELETE_GROUP} from './types';
+import { FETCH_ALL_REALM_GROUPS, CREATE_GROUP, DELETE_GROUP } from "./types";
 
 export function fetchAllRealmGroups(realmId) {
-    return{
+    return {
         type: FETCH_ALL_REALM_GROUPS,
-        payload: apiClient.get(`/${realmId}/groups`)
-    }
+        payload: apiClient.get(`/${realmId}/groups`),
+    };
 }
 
 export function createGroup(data) {
-    return{
+    return {
         type: CREATE_GROUP,
-        payload: apiClient.post('/group',data)
-    }
+        payload: apiClient.post("/group", data),
+    };
 }
 
 export function deleteGroup(id) {
-    return{
+    return {
         type: DELETE_GROUP,
-        payload: apiClient.get(`/group/${id}`)
-    }
+        payload: apiClient.get(`/group/${id}`),
+    };
 }

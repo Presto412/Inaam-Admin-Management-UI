@@ -1,15 +1,13 @@
-import { Button, Input, Divider } from 'antd';
+import { Button, Input, Divider } from "antd";
 import React, { Component } from "react";
 
 class UserEdit extends Component {
-
-    constructor(props){
-      super(props);
-    
+    constructor(props) {
+        super(props);
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <Input placeholder="Id" />
                 <Divider />
@@ -19,9 +17,8 @@ class UserEdit extends Component {
                 <Divider />
                 <Button type="primary">Save</Button>
             </div>
-        )
+        );
     }
-  
 }
 
 export default UserEdit;

@@ -10,14 +10,18 @@ export const FETCH_ALL_REALM_GROUPS = "FETCH_ALL_REALM_GROUPS";
 export const CREATE_GROUP = "CREATE_GROUP";
 export const DELETE_GROUP = "DELETE_GROUP";
 
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT = "LOGOUT";
+
 export function getPending(str) {
-    return str + '_PENDING';
-}
-  
- export function getFulfilled(str) {
-    return str + '_FULFILLED';
+    return str + "_PENDING";
 }
 
- export function getRejected(str) {
-    return str + '_REJECTED';
+export function getFulfilled(str) {
+    return str + "_FULFILLED";
+}
+
+export function getRejected(str) {
+    return str + "_REJECTED";
 }
